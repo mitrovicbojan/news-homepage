@@ -21,10 +21,12 @@ p {
 }
 header {
   margin-top: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 8vh;
   border: 2px solid red;
@@ -47,18 +49,22 @@ nav {
 .nav-links a:hover {
   color: var(--soft-orange);
 }
-
-.container {
+.hero {
   display: flex;
   justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
   margin: 4rem;
+  border: 2px solid purple;
 }
 
 .left-side {
-  width: 50%;
   height: auto;
-  margin-right: 2rem;
 }
 
 .left-side .main-img {
@@ -68,25 +74,15 @@ nav {
   height: 40vh;
 }
 
-.right-side {
-  width: 20%;
-}
 .right-container {
   height: 100%;
   border: 2px solid red;
 }
-.bottom {
-  border: 2px solid purple;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+
 .bottom-cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 2rem;
-  width: 70%;
 }
 .bottom-card {
   display: flex;
