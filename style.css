@@ -88,8 +88,10 @@ nav {
 }
 
 .container-main-headlines-text {
-  font-size: 30px;
+  font-size: 40px;
   line-height: 1;
+  width: 100%;
+  height: auto;
 }
 
 .headline-description-text {
@@ -124,6 +126,7 @@ nav {
 }
 .card-column {
   padding-bottom: 15px;
+  border-bottom: 1px solid var(--off-white);
   text-align: justify;
   overflow: auto;
 }
@@ -131,6 +134,34 @@ nav {
 .card-column:nth-child(3) {
   border-bottom: none;
 }
+
+.card-value {
+  padding: 15px 0;
+}
+.card-value-new {
+  font-size: 30px;
+  color: var(--soft-orange);
+}
+
+.card-value a {
+  color: var(--off-white);
+  cursor: pointer;
+  padding: 10px 0;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+}
+.card-value a:hover {
+  color: var(--soft-orange);
+}
+.card-value p {
+  color: var(--off-white);
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  font-size: 15px;
+  padding: 10px 0;
+}
+
 .bottom-cards {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -145,4 +176,85 @@ nav {
 .bottom-cards-row {
   display: flex;
   flex-direction: row;
+}
+.bottom-cards-row-img {
+  max-height: 120px;
+}
+.bottom-cards-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: auto 15px;
+  margin-top: -5px;
+}
+.bottom-cards-news-number {
+  font-size: 22px;
+  color: var(--grayish-blue);
+  line-height: 1.5;
+  font-weight: 900;
+}
+.bottom-cards-news-title {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.bottom-cards-news-title:hover {
+  color: var(--soft-red);
+}
+.bottom-cards-news-desc {
+  font-size: 14px;
+  color: var(--dark-grayish-blue);
+}
+@media (max-width: 768px) {
+  .hero {
+    width: 22rem;
+    margin: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .container-main-headlines {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-main-headline-description {
+    width: 100%;
+    display: flex;
+  }
+
+  .container-main .headline-description-text {
+    width: 100%;
+  }
+  .container-main {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .card {
+    max-width: 100%;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .bottom-cards {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .bottom-cards-row {
+    margin-bottom: 20px;
+  }
 }
