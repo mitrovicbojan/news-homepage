@@ -94,7 +94,7 @@ nav {
   height: auto;
 }
 
-.headline-description-text {
+.container-main-headline-description-text {
   font-size: 20px;
   color: var(--dark-grayish-blue);
 }
@@ -224,9 +224,10 @@ nav {
   .container-main-headline-description {
     width: 100%;
     display: flex;
+    flex-direction: column;
   }
 
-  .container-main .headline-description-text {
+  .container-main-headline-description-text {
     width: 100%;
   }
   .container-main {
