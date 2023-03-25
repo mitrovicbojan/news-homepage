@@ -6,7 +6,7 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/news-landing-page-VUnjtokhof)
 - Live Site URL: [Add live site URL here](https://frontm-news.netlify.app/)
 
 ### Built with
