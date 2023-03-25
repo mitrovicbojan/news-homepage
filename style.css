@@ -268,8 +268,36 @@ nav {
     height: 100%;
     width: 50%;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--dark-grayish-blue);
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 2rem;
+    margin-top: 0;
+    background-color: var(--off-white);
+    transform: translateX(100%);
+  }
+  .nav-item {
+    margin-bottom: 25px;
+  }
+  #prim-nav[data-visible="true"] {
+    display: none;
+  }
+  .mobile-toggle {
+    display: block;
+    position: absolute;
+    background: url(./assets/images/icon-menu-close.svg);
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 2.5rem;
+    right: 2rem;
+    z-index: 100000;
+    border: 0;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .mobile-toggle[aria-expanded="true"] {
+    background: url(./assets/images/icon-menu.svg);
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin-right: 20px;
   }
 }
